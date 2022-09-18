@@ -14,7 +14,7 @@
 
 LOG_MODULE_REGISTER(cst816s, CONFIG_KSCAN_LOG_LEVEL);
 
-#define CST816S_CHIP_ID                 0xB4
+#define CST816S_CHIP_ID                 0xB5
 
 #define CST816S_REG_DATA                0x00
 #define CST816S_REG_GESTURE_ID          0x01
