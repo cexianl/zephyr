@@ -1,6 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
 
-
 zephyr_sources_ifdef(CONFIG_BT_DIS dis.c)
 
 zephyr_sources_ifdef(CONFIG_BT_BAS bas.c)
@@ -16,3 +15,9 @@ endif()
 if(CONFIG_BT_IAS OR CONFIG_BT_IAS_CLIENT)
   add_subdirectory(ias)
 endif()
+
+if(CONFIG_BT_ANCS_CLIENT)
+  add_subdirectory(ancs)
+endif()
+
+zephyr_sources_ifdef(CONFIG_BT_GATTP gattp.c)

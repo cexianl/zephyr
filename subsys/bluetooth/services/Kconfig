@@ -18,4 +18,8 @@ rsource "ias/Kconfig.ias"
 
 rsource "ots/Kconfig"
 
+rsource "ancs/Kconfig.ancs_client"
+
+rsource "Kconfig.gattp"
+
 endmenu

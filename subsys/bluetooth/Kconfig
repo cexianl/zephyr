@@ -171,6 +171,7 @@ rsource "common/Kconfig"
 rsource "host/Kconfig"
 rsource "controller/Kconfig"
 rsource "shell/Kconfig"
+rsource "Kconfig.discovery"
 
 endif # BT_HCI
 
