@@ -755,6 +755,7 @@ static int IRAM_ATTR i2c_esp32_init(const struct device *dev)
 		      &i2c_esp32_driver_api);
 
 #if DT_NODE_HAS_STATUS(I2C(0), okay)
+#undef SOC_I2C_SUPPORT_HW_CLR_BUS
 #ifndef SOC_I2C_SUPPORT_HW_CLR_BUS
 #if !DT_NODE_HAS_PROP(I2C(0), sda_gpios) || !DT_NODE_HAS_PROP(I2C(0), scl_gpios)
 #error "Missing <sda-gpios> and <scl-gpios> properties to build for this target."
