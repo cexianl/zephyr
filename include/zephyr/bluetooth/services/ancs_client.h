@@ -189,7 +189,8 @@ enum bt_ancs_notif_attr_id_val {
 	/** The notification has a "Positive action" that can be executed associated with it. */
 	BT_ANCS_NOTIF_ATTR_ID_POSITIVE_ACTION_LABEL,
 	/** The notification has a "Negative action" that can be executed associated with it. */
-	BT_ANCS_NOTIF_ATTR_ID_NEGATIVE_ACTION_LABEL
+	BT_ANCS_NOTIF_ATTR_ID_NEGATIVE_ACTION_LABEL,
+	BT_ANCS_NOTIF_ATTR_ID_MAX,
 };
 
 /**@brief Flags for iOS notifications. */
