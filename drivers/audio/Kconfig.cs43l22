@@ -1,0 +1,11 @@
+# Copyright (c) 2019 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+
+config AUDIO_CS43L22
+	bool "CS43L22 DAC support"
+	default n
+	select I2C
+	select I2S
+	depends on GPIO
+	help
+	  Enable CS43L22 support on the selected board
