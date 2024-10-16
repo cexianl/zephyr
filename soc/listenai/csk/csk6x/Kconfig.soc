@@ -1,0 +1,18 @@
+# Copyright (c) 2024 Fujie Li <cexianl@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_SERIES_CSK6X
+	bool
+	select SOC_FAMILY_LISTENAI_CSK6
+	help
+	  Enable support for ListenAI CSK6X MCU series
+
+config SOC_SERIES
+	default "csk6x" if SOC_SERIES_CSK6X
+
+config SOC_CSK6011A
+	bool
+	select SOC_SERIES_CSK6X
+
+config SOC
+	default "csk6011a" if SOC_CSK6011A

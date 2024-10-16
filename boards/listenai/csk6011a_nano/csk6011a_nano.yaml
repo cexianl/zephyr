@@ -1,0 +1,14 @@
+identifier: csk6011a_nano
+name: CSK6011A Nano
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+ram: 320
+testing:
+  ignore_tags:
+    - net
+    - bluetooth
+supported:
+  - gpio
+vendor: listenai

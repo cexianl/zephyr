@@ -1,0 +1,8 @@
+# Copyright (c) 2024 Fujie Li <cexianl@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_SERIES_CSK6X
+
+rsource "Kconfig.defconfig.csk6*"
+
+endif # SOC_SERIES_CSK6X
