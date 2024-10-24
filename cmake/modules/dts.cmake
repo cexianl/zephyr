@@ -396,6 +396,7 @@ execute_process(
   )
 
 if(NOT "${ret}" STREQUAL "0")
+  message(WARNING "dtc raised one or more warnings:\n${stderr}")
   message(FATAL_ERROR "dtc failed with return code: ${ret}")
 elseif(stderr)
   # dtc printed warnings on stderr but did not fail.

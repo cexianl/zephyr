@@ -1,0 +1,12 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+#include <dt-bindings/pinctrl/csk6-pinctrl.h>
+#include <listenai/csk6/csk6.dtsi>
+
+&pinctrl {
+        uart0_default: uart0_default {
+                group1 {
+			pinmux = <UART0_RXD_GPIOA_02>,
+				 <UART0_TXD_GPIOA_03>;
+		};
+        };
+};
