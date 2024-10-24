@@ -377,6 +377,7 @@ linksys	Belkin International, Inc. (Linksys)
 linutronix	Linutronix GmbH
 linux	Linux-specific binding
 linx	Linx Technologies
+listenai	Anhui(Shenzhen) Listenai Co., Ltd.
 litex	LiteX SoC builder
 lltc	Linear Technology Corporation
 logicpd	Logic PD, Inc.
